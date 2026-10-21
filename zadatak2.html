@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Narudžba pizze</title>
+</head>
+<body>
+  <h1>Narudžba pizze</h1>
+
+  <p>Popunite obrazac ispod kako biste naručili pizzu s dostavom na kućnu adresu.</p>
+<form>
+
+  <label for="ime">Ime i prezime:</label>
+  <input type="text" id="ime" name="ime">
+
+
+  <p>Veličina pizze:</p>
+
+  <input type="radio" id="mala" name="velicina" value="mala">
+  <label for="mala">Mala (24 cm)</label>
+  <input type="radio" id="srednja" name="velicina" value="srednja">
+  <label for="srednja">Srednja (32 cm)</label>
+  <input type="radio" id="velika" name="velicina" value="velika">
+  <label for="velika">Velika (42 cm)</label>
+
+
+  <p>Dodaci:</p>
+
+  <input type="checkbox" id="gljive" name="dodaci" value="gljive">
+  <label for="gljive">Gljive</label>
+  <input type="checkbox" id="masline" name="dodaci" value="masline">
+  <label for="masline">Masline</label>
+  <input type="checkbox" id="sir" name="dodaci" value="ekstra-sir">
+  <label for="sir">Ekstra sir</label>
+  <input type="checkbox" id="prsuta" name="dodaci" value="prsuta">
+  <label for="prsuta">Pršuta</label>
+
+
+  <label for="placanje">Način plaćanja:</label>
+  <select id="placanje" name="placanje">
+    <option value="gotovina">Gotovina pri dostavi</option>
+    <option value="kartica">Kartica pri dostavi</option>
+    <option value="online">Online plaćanje</option>
+  </select>
+
+
+
+  <label for="napomena">Napomena za dostavu:</label><br>
+  <textarea id="napomena" name="napomena" rows="3" cols="40"></textarea>
+
+
+  <button type="button">Naruči</button>
+</form>
+
+  <h2>Obrazloženje izbora</h2>
+
+  <p>Za veličinu pizze koristio sam radio buttons grupu umjesto select elementa. Postoje samo tri opcije i korisnik može odabrati tačno jednu, pa su sve opcije odmah vidljive i mogu se usporediti bez dodatnog klika. Select bi bio prikladniji za dugačku listu opcija, na primjer gradove, jer zauzima manje prostora.</p>
+
+  <p>Za dodatke sam koristio checkboxove jer je višestruki izbor ovdje smislen: na pizzu se može staviti nekoliko dodataka istovremeno, a korisnik može odabrati i nijedan. Radio buttons ili select ne bi to omogućili.</p>
+
+  <h2>Primjeri unosa</h2>
+
+  <ol>
+    <li>
+      Primjer 1:
+      <ul>
+        <li>Ime i prezime: Tarik Beganović</li>
+        <li>Veličina pizze (samo jedan izbor): Srednja</li>
+        <li>Dodaci (više izbora): gljive, masline, ekstra sir</li>
+        <li>Način plaćanja: kartica pri dostavi</li>
+      </ul>
+    </li>
+    <li>
+      Primjer 2:
+      <ul>
+        <li>Ime i prezime: Kemal Bečarević</li>
+        <li>Veličina pizze (samo jedan izbor): Velika</li>
+        <li>Dodaci (više izbora): pršuta, ekstra sir</li>
+        <li>Način plaćanja: gotovina pri dostavi</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
