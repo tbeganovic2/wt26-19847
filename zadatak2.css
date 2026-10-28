@@ -1,0 +1,26 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 4px;
+}
+
+nav a {
+  /* display: inline; prvo isprobano: width nema efekta */
+  display: block;
+  width: 200px;
+  padding: 10px 15px;
+  border: 2px solid #1e4d2b;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-color: #2e7d32;
+  background-color: #c8e6c9;
+  color: #1e4d2b;
+}

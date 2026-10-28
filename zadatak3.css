@@ -1,0 +1,23 @@
+#naslov {
+  font-family: Verdana, sans-serif;
+  color: #00539f;
+  text-align: center;
+}
+
+.ponuda {
+  width: 500px;
+  margin: 0 auto 20px auto;
+  padding: 15px 20px;
+  border: 2px solid #999;
+  font-family: Verdana, sans-serif;
+}
+
+
+.info {
+  font-weight: bold;
+}
+
+.preporucena {
+  border-color: #e65100;
+  background-color: #fff3e0;
+}
