@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Kratka obavijest</title>
+  <link rel="stylesheet" href="zadatak2.css">
+</head>
+<body>
+  <h1>Kratka obavijest</h1>
+
+  <form id="forma">
+    <p>
+      <label for="naslov">Naslov:</label><br>
+      <input type="text" id="naslov" name="naslov" size="40">
+      <p id="brojSlova">0</p>
+    </p>
+
+    <p>
+      <label for="tekst">Tekst obavijesti:</label><br>
+      <textarea id="tekst" name="tekst" rows="4" cols="40"></textarea>
+    </p>
+
+    <p>Kategorija:</p>
+    <p>
+      <input type="radio" id="opce" name="kategorija" value="opce" checked>
+      <label for="opce">Opće obavještenje</label>
+      <input type="radio" id="hitno" name="kategorija" value="hitno">
+      <label for="hitno">Hitno</label>
+    </p>
+
+    <button type="submit">Pregled</button>
+    <button type="reset">Poništi</button>
+
+    <p id="greska"></p>
+  </form>
+
+  <h2>Pregled</h2>
+
+  <div id="pregled" class="pregled opce">
+    <span id="pregledKategorija" class="oznaka">Opće obavještenje</span>
+    <h3 id="pregledNaslov">Naslov obavijesti</h3>
+    <p id="pregledTekst">Ovdje će se prikazati tekst obavijesti nakon klika na dugme Pregled.</p>
+  </div>
+
+  <script src="zadatak2.js"></script>
+</body>
+</html>

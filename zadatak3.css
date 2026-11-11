@@ -1,0 +1,33 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 20px;
+}
+
+#greska {
+  color: #c62828;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 400px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 6px 10px;
+}
+
+thead th {
+  background-color: #cccccc;
+}
+
+.iznos {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #eeeeee;
+}

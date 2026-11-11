@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Evidencija troškova</title>
+  <link rel="stylesheet" href="zadatak3.css">
+</head>
+<body>
+  <h1>Evidencija mjesečnih troškova</h1>
+
+  <form id="forma">
+    <label for="naziv">Naziv:</label>
+    <input type="text" id="naziv" name="naziv">
+
+    <label for="iznos">Iznos (KM):</label>
+    <input type="text" id="iznos" name="iznos" size="8">
+
+    <button type="submit">Dodaj</button>
+
+    <p id="greska"></p>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Naziv</th>
+        <th>Iznos (KM)</th>
+      </tr>
+    </thead>
+    <tbody id="stavke">
+      <tr>
+        <td>Mjesečna karta za tramvaj</td>
+        <td class="iznos">25.00</td>
+      </tr>
+      <tr>
+        <td>Hrana u menzi</td>
+        <td class="iznos">60.00</td>
+      </tr>
+      <tr>
+        <td>Internet</td>
+        <td class="iznos">35.50</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Ukupno (broj stavki: <span id="brojStavki">3</span>)</td>
+        <td class="iznos" id="zbir">0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script src="zadatak3.js"></script>
+</body>
+</html>
